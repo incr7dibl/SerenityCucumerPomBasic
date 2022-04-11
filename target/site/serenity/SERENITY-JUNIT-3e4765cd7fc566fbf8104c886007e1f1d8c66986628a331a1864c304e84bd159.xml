@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="6" name="Choosing all the items" skipped="0" tests="18" time="64.19" timestamp="2022-04-01 01:29:28"><testcase name="User choosing all the items"><failure message="&#13;&#10;The following assertion failed:&#13;&#10;1) expected:&lt;&quot;Sauce Labs [Backpack]&quot;&gt; but was:&lt;&quot;Sauce Labs [Fleece Jacket]&quot;&gt;&#13;&#10;" type="java.lang.AssertionError">&#13;
+The following assertion failed:&#13;
+1) expected:&lt;"Sauce Labs [Backpack]"&gt; but was:&lt;"Sauce Labs [Fleece Jacket]"&gt;&#13;
+</failure><system-err>&#13;
+The following assertion failed:&#13;
+1) expected:&lt;"Sauce Labs [Backpack]"&gt; but was:&lt;"Sauce Labs [Fleece Jacket]"&gt;&#13;
+&#13;
+SerenityCucumberPageObjects@0.0.1-SNAPSHOT/steps.SauceDemoSteps.choosenewItem(SauceDemoSteps.java:31)&#13;
+SerenityCucumberPageObjects@0.0.1-SNAPSHOT/cucumbersteps.NewChooseItemSteps.user_choose_the_item(NewChooseItemSteps.java:35)&#13;
+✽.user choose the Sauce Labs Backpack item(file:///C:/Users/Harsh/eclipse-workspace/SerenityCucumberPageObjects/./src/test/resources/features/chooseitem.feature:7)&#13;
+</system-err></testcase></testsuite>

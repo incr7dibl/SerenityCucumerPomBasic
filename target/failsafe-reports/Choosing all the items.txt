@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: Choosing all the items
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 64.571 s <<< FAILURE! - in Choosing all the items
+Choosing all the items.User choosing all the items #7  Time elapsed: 1.243 s  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+
+The following assertion failed:
+1) expected:<"Sauce Labs [Backpack]"> but was:<"Sauce Labs [Fleece Jacket]">
+
+
+Choosing all the items.User choosing all the items #8  Time elapsed: 1.236 s  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+
+The following assertion failed:
+1) expected:<"Sauce Labs B[ike Ligh]t"> but was:<"Sauce Labs B[olt T-Shir]t">
+
+
+Choosing all the items.User choosing all the items #9  Time elapsed: 1.153 s  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+
+The following assertion failed:
+1) expected:<"Sauce Labs [Bolt T-Shirt]"> but was:<"Sauce Labs [Onesie]">
+
+
+Choosing all the items.User choosing all the items #10  Time elapsed: 1.117 s  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+
+The following assertion failed:
+1) expected:<"[Sauce Labs Fleece Jacket]"> but was:<"[ITEM NOT FOUND]">
+
+
+Choosing all the items.User choosing all the items #11  Time elapsed: 1.358 s  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+
+The following assertion failed:
+1) expected:<"[Sauce Labs Onesie]"> but was:<"[Test.allTheThings() T-Shirt (Red)]">
+
+
+Choosing all the items.User choosing all the items #12  Time elapsed: 0.982 s  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+
+The following assertion failed:
+1) expected:<"[Test.allTheThings() T-Shirt (Red)]"> but was:<"[Sauce Labs Backpack]">
+
+

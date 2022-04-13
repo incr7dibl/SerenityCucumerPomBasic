@@ -26,7 +26,7 @@ public class SauceDemoSteps {
 	@Step("Choosing new Item")
 	public void choosenewItem(String itemname) {
 		homePage.chooseNewItem(itemname);
-		SoftAssertions softly=new SoftAssertions();
+		SoftAssertions softly = new SoftAssertions();
 		softly.assertThat(homePage.getItemHeading()).isEqualTo(itemname);
 		softly.assertAll();
 		/*
@@ -42,5 +42,20 @@ public class SauceDemoSteps {
 	@Step("Finding Item names and their prices")
 	public void findItemNameandPrices() {
 		homePage.getItemNamesAndPrices();
+	}
+
+	@Step("Adding all the items")
+	public void addAllItems() {
+		homePage.addAllItems();
+	}
+
+	public void addIndividualItem(String itemname) {
+		homePage.selectNewItem(itemname);
+
+	}
+
+	public void clickOnCart() {
+		homePage.clickOnCart();
+
 	}
 }

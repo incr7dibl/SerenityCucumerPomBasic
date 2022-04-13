@@ -26,3 +26,4 @@ Feature: Choosing all the items
       | performance_glitch_user | secret_sauce | Sauce Labs Fleece Jacket          |
       | performance_glitch_user | secret_sauce | Sauce Labs Onesie                 |
       | performance_glitch_user | secret_sauce | Test.allTheThings() T-Shirt (Red) |
+

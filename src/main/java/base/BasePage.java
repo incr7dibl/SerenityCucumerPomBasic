@@ -28,6 +28,7 @@ public class BasePage extends PageObject {
 
 	public List<WebElementFacade> getElements(String locator) {
 		try {
+			
 			return findAll(getBy(locator));
 
 		} catch (NoSuchElementException e) {

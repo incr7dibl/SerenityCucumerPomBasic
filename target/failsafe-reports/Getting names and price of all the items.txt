@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Getting names and price of all the items
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.579 s - in Getting names and price of all the items

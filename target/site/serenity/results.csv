@@ -1,3 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Choosing all the items","User choosing all the items","FAILURE","2022-04-01T01:29:28.0242333+05:30[Asia/Calcutta]","0.0","64.19"
-"Getting names and price of all the items","User getting names and price of all the items","SUCCESS","2022-04-01T01:29:27.8812315+05:30[Asia/Calcutta]","0.0","13.34"
+"Adding items to cart from homepage","User adding all the items from homepage","SUCCESS","2022-04-23T02:25:23.2524298+05:30[Asia/Calcutta]","0.0","8.28"
+"Adding items to cart from homepage","User adding individual item","SUCCESS","2022-04-23T02:25:31.5911877+05:30[Asia/Calcutta]","0.0","2.09"

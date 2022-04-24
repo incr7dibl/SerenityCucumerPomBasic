@@ -4,7 +4,7 @@ Feature: Choosing all the items
   Scenario Outline: User choosing all the items
     Given user navigate to the website
     When user do the login with username <username> and password <password>
-    Then user choose the <item> item
+    Then user <username> choose the <item> item
 
     Examples: 
       | username                | password     | item                              |
@@ -14,16 +14,26 @@ Feature: Choosing all the items
       | standard_user           | secret_sauce | Sauce Labs Fleece Jacket          |
       | standard_user           | secret_sauce | Sauce Labs Onesie                 |
       | standard_user           | secret_sauce | Test.allTheThings() T-Shirt (Red) |
-      | problem_user            | secret_sauce | Sauce Labs Backpack               |
-      | problem_user            | secret_sauce | Sauce Labs Bike Light             |
-      | problem_user            | secret_sauce | Sauce Labs Bolt T-Shirt           |
-      | problem_user            | secret_sauce | Sauce Labs Fleece Jacket          |
-      | problem_user            | secret_sauce | Sauce Labs Onesie                 |
-      | problem_user            | secret_sauce | Test.allTheThings() T-Shirt (Red) |
       | performance_glitch_user | secret_sauce | Sauce Labs Backpack               |
       | performance_glitch_user | secret_sauce | Sauce Labs Bike Light             |
       | performance_glitch_user | secret_sauce | Sauce Labs Bolt T-Shirt           |
       | performance_glitch_user | secret_sauce | Sauce Labs Fleece Jacket          |
       | performance_glitch_user | secret_sauce | Sauce Labs Onesie                 |
       | performance_glitch_user | secret_sauce | Test.allTheThings() T-Shirt (Red) |
+      
+      
+ Scenario Outline: Problem User choosing all the items
+    Given user navigate to the website
+    When user do the login with username <username> and password <password>
+    Then user <username> choose the <item> item
+
+    Examples: 
+      | username                | password     | item                              |
+      | problem_user            | secret_sauce | Sauce Labs Backpack               |
+      | problem_user            | secret_sauce | Sauce Labs Bike Light             |
+      | problem_user            | secret_sauce | Sauce Labs Bolt T-Shirt           |
+      | problem_user            | secret_sauce | Sauce Labs Fleece Jacket          |
+      | problem_user            | secret_sauce | Sauce Labs Onesie                 |
+      | problem_user            | secret_sauce | Test.allTheThings() T-Shirt (Red) |
+ 
 

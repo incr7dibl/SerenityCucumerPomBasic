@@ -30,8 +30,14 @@ public class NewChooseItemSteps {
 		sauceDemoSteps.doLogin(userName, password);
 	}
 
-	@Then("user choose the {} item")
-	public void user_choose_the_item(String itemName) {
-		sauceDemoSteps.choosenewItem(itemName);
+//	@Then("user choose the {} item")
+//	public void user_choose_the_item(String itemName) {
+//		sauceDemoSteps.choosenewItem(itemName);
+//	}
+	
+	@Then("user {} choose the {} item")
+	public void user_standard_user_choose_the_sauce_labs_backpack_item(String userName, String item) {
+	    // Write code here that turns the phrase above into concrete actions
+	    sauceDemoSteps.choosenewItem(userName,item);
 	}
 }

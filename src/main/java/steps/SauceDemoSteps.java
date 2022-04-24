@@ -1,5 +1,7 @@
 package steps;
 
+import org.assertj.core.api.Assert;
+import org.assertj.core.api.Assertions;
 import org.assertj.core.api.SoftAssertions;
 import net.serenitybdd.core.Serenity;
 import net.thucydides.core.annotations.Step;
@@ -24,11 +26,22 @@ public class SauceDemoSteps {
 	}
 
 	@Step("Choosing new Item")
-	public void choosenewItem(String itemname) {
+	public void choosenewItem(String userName, String itemname) {
 		homePage.chooseNewItem(itemname);
-		SoftAssertions softly = new SoftAssertions();
-		softly.assertThat(homePage.getItemHeading()).isEqualTo(itemname);
-		softly.assertAll();
+//		SoftAssertions softly = new SoftAssertions();
+
+		if (userName == "problem_user") {
+			
+			Assertions.assertThat(homePage.getItemHeading()!= itemname);
+//			softly.assertThat(homePage.getItemHeading()).isNotEqualToIgnoringCase(itemname);
+//			softly.assertAll();
+		} else {
+			Assertions.assertThat(homePage.getItemHeading().equalsIgnoreCase(itemname));
+//			softly.assertThat(homePage.getItemHeading()).isEqualTo(itemname);
+//			softly.assertAll();
+		}
+
+		
 		/*
 		 * Serenity.reportThat("Actual :" + homePage.getItemHeading() + ",  Expected :"
 		 * + itemname, () -> {

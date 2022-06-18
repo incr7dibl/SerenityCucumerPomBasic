@@ -32,7 +32,7 @@ public class AddtoCart {
 	}
 
 	@Then("User selects items")
-	public void user_selects_items(DataTable dataTable) {
+	public void user_selects_items(DataTable dataTable) throws InterruptedException {
 		List<String> itemList = dataTable.asList(String.class);
 
 		for (String itemname : itemList) {

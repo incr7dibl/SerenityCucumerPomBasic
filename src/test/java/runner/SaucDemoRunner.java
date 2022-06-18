@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "./src/test/resources/features", glue = "cucumbersteps")
+@CucumberOptions(features = "./src/test/resources/features/addtocart.feature", glue = "cucumbersteps")
 public class SaucDemoRunner {
 
 }

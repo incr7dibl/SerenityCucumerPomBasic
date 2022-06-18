@@ -1,6 +1,7 @@
 package steps;
 
 import org.assertj.core.api.Assert;
+
 import org.assertj.core.api.Assertions;
 import org.assertj.core.api.SoftAssertions;
 import net.serenitybdd.core.Serenity;
@@ -62,7 +63,7 @@ public class SauceDemoSteps {
 		homePage.addAllItems();
 	}
 
-	public void addIndividualItem(String itemname) {
+	public void addIndividualItem(String itemname) throws InterruptedException {
 		homePage.selectNewItem(itemname);
 
 	}

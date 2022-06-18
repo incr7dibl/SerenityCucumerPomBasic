@@ -32,9 +32,10 @@ public class HomePage extends BasePage {
 		}
 	}
 
-	public void selectNewItem(String itemName) {
+	public void selectNewItem(String itemName) throws InterruptedException {
 
 		click("link=" + itemName);
+		
 		getDriver().navigate().refresh();
 
 		click(additem);

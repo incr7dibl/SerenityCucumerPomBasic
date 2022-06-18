@@ -37,7 +37,7 @@ public class BasePage extends PageObject {
 			return null;
 		}
 	}
-
+//new comment
 	private By getBy(String locator) {
 		// TODO Auto-generated method stub
 
